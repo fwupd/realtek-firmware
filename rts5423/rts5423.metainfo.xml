@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.realtek.rts5423.firmware</id>
+  <name>RTS5423</name>
+  <summary>Firmware for the Realtek RTS5423 dock</summary>
+  <description>
+    <p>
+      Updating the firmware on your RTS5423 improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_0BDA&PID_5423 -->
+    <firmware type="flashed">42fc03f7-7a2d-5a50-a13b-610f2b7824c1</firmware>
+  </provides>
+  <url type="homepage">http://www.realtek.com/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Realtek</developer_name>
+  <releases>
+    <release urgency="medium" version="1.19" date="2018-10-10">
+      <checksum filename="rts5423_hub_typec_128k_with_timeinfo_sign_crc.bin" target="content"/>
+      <description>
+        <p>
+          New features and enhancements:
+        </p>
+        <ul>
+          <li>I don't know what to put here!</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <requires>
+    <!-- only newer versions of fwupd know how to write to this hardware -->
+    <id compare="ge" version="1.1.2">org.freedesktop.fwupd</id>
+  </requires>
+</component>
